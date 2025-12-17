@@ -22,4 +22,4 @@ If you want to generate images with a different size, use `--target-gb` paramete
 uv run python gen_images.py --target-gb 4
 ```
 
-
+They will generate images to the ignored `generated_images/` folder
