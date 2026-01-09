@@ -4,7 +4,7 @@ This is used for testing if large files are required
 
 ## Prerequisites
 
-- [uv](https://github.com/astral-sh/uv)
+- [uv](https://docs.astral.sh/uv/getting-started/installation/)
 
 ## Install
 ```
