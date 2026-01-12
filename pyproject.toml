@@ -1,7 +1,7 @@
 [project]
 name = "large-image-generator"
 version = "0.1.0"
-description = "Add your description here"
+description = "Script to generate images of different sizes. Used mainly when requiring large files for testing"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
