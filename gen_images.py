@@ -9,7 +9,7 @@ Generate images (JPEG or BMP) until total output size exceeds a target.
 from __future__ import annotations
 import argparse
 from pathlib import Path
-
+import shutil
 import numpy as np
 from PIL import Image
 
@@ -44,6 +44,8 @@ def main() -> None:
     args = p.parse_args()
 
     out_dir = Path(args.out)
+    if out_dir.exists():
+        shutil.rmtree(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
 
     target_bytes = int(args.target_gb * 1024 * 1024 * 1024)
